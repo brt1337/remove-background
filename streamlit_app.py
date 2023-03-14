@@ -15,7 +15,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.write("## Remova o fundo da sua imagem")
 st.write(
-    ":dog: Tente fazer upload de uma imagem para ver o plano de fundo removido magicamente. Imagens de qualidade total podem ser baixadas na barra lateral. Este código é open source e está disponível aqui no GitHub. Agradecimentos especiais à biblioteca [rembg library](<https://github.com/danielgatis/rembg>) :grin:"
+    ":dog: Faça upload de uma imagem para ver o plano de fundo removido magicamente. \n Imagens de qualidade total podem ser baixadas na barra lateral. \nEste código é open source e está disponível aqui no GitHub. Agradecimentos especiais à biblioteca [rembg library](<https://github.com/danielgatis/rembg>) :grin:"
 )
 st.sidebar.write("## Upload e download :gear:")
 
