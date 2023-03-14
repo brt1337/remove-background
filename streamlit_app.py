@@ -53,6 +53,6 @@ my_upload = st.sidebar.file_uploader("Upload Imagem",
 if my_upload is not None:
     fix_image(upload=my_upload)
 else:
-    fix_image("./mbappe-psg.jpg")
+    fix_image("./Dani-Alves.jpg")
 
 
