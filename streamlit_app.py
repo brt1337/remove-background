@@ -14,8 +14,8 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 st.write("## Remova o fundo da sua imagem")
-st.write(":dog: Faça upload de uma imagem para ver o plano de fundo removido magicamente.Imagem com alta qualidade pode ser baixada na barra lateral pelo botão download. :grin:")
-st.write(":dog: Faça upload de uma imagem para ver o plano de fundo removido magicamente.Imagem com alta qualidade pode ser baixada na barra lateral pelo botão download. :grin:")
+st.write(":dog: Faça upload de uma imagem para ver o plano de fundo removido magicamente. :grin:")
+st.write(":camera: A imagem com alta qualidade pode ser baixada na barra lateral pelo botão download. :camera:")
 st.sidebar.write("## Upload e download :gear:")
 
 # Create the columns
