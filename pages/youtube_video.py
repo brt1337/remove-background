@@ -37,7 +37,7 @@ def Convert_video():
         title_vid = Path(default_filename).with_suffix(".mp4").name
         st.subheader("Watch the video")
         st.video(buffer, format='video/mpeg')
-        st.subheader("Download Audio File")
+        st.subheader("Download Video File")
         st.download_button(
             label="Download mp4",
             data=buffer,
