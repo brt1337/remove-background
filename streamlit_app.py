@@ -14,25 +14,21 @@ st.set_page_config(page_title="Home", page_icon="😁", layout="wide",initial_si
 no_sidebar_style="""
             <style>
                 div[data-testid="stSidebarNav"] {display: none;}
-                button {visibility: hidden;}
+                div[data-testid="collapsedControl"] {display: none;}
             </style>
             """
 st.markdown(no_sidebar_style,unsafe_allow_html=True)
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-
-
 with st.sidebar:
-    st.write("linkedin")
-    st.subheader("subheader")
-    st.button('teste')
+    st.button('GitHub')
 
 selected = option_menu(None,["Home","Remove Background Image","Convert Audio Youtube","Convert Video Youtube"],
                        icons=['house','cloud-upload'],
