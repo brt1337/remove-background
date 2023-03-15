@@ -35,7 +35,7 @@ selected = option_menu(None,["Home","Remove Background Image","Convert Audio You
                        menu_icon="cast", default_index=0, orientation="horizontal")
 
 def Home():
-    st.title("On this page you can magically download video from youtube, download audio form youtube and remove background from an image.")
+    st.title("On this page you can magically download video from youtube, download audio from youtube and remove background from image.")
     st.header("Completely free and open source project. ")
 
 
