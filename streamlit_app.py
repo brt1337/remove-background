@@ -41,7 +41,7 @@ def Home():
 
 def remove_background():
     st.write("## Remove background from your image")
-    st.write(":dog: pload an image to see the background magically removed. :grin:")
+    st.write(":dog: Upload image to see the background magically removed. :grin:")
     st.write(":camera: The high quality image can be downloaded from the sidebar.")
 
     # Create the columns
