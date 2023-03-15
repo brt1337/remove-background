@@ -83,7 +83,7 @@ def remove_background():
     if my_upload is not None:
         fix_image(upload=my_upload)
     else:
-        fix_image("./DaniAlves.jpg")
+        fix_image("./Dani-Alves.jpg")
 
 if selected  == 'Home':
     Home()
