@@ -10,7 +10,7 @@ from rembg import remove
 from streamlit_option_menu import option_menu
 
 
-st.set_page_config(page_title="Home", page_icon="😁", layout="centered",initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Home", page_icon="😁", layout="wide",initial_sidebar_state="collapsed")
 no_sidebar_style="""
             <style>
                 div[data-testid="stSidebarNav"] {display: none;}
