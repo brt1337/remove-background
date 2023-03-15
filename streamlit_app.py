@@ -26,21 +26,26 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-with st.sidebar:
-    st.button('GitHub')
 
+
+with st.sidebar:
+    github =   '[GitHub](http://github.com)'
+    linkedin = '[Linkedin](http://linkedin.com)'
+    st.markdown(github, unsafe_allow_html=True)
+    st.markdown(linkedin, unsafe_allow_html=True)
+    
 selected = option_menu(None,["Home","Remove Background Image","Convert Audio Youtube","Convert Video Youtube"],
                        icons=['house','cloud-upload'],
                        menu_icon="cast", default_index=0, orientation="horizontal")
 
 def Home():
-    st.title("On this page you can magically download video from youtube, download audio from youtube and remove background from image.")
+    st.title("On this page you can magically download video from youtube, download audio form youtube and remove background from an image.")
     st.header("Completely free and open source project. ")
 
 
 def remove_background():
     st.write("## Remove background from your image")
-    st.write(":dog: Upload image to see the background magically removed. :grin:")
+    st.write(":dog: Upload an image to see the background magically removed. :grin:")
     st.write(":camera: The high quality image can be downloaded from the sidebar.")
 
     # Create the columns
