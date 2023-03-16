@@ -33,7 +33,7 @@ with st.sidebar:
     st.markdown(github, unsafe_allow_html=True)
     st.markdown(linkedin, unsafe_allow_html=True)
     
-selected = option_menu(None,["Home","Remove Background Image","Convert Audio Youtube","Convert Video Youtube"],
+selected = option_menu(None,["Home","Remove Background Image","Download Audio Yt","Download Video Yt"],
                        icons=['house','cloud-upload'],
                        menu_icon="cast", default_index=0, orientation="horizontal")
 
