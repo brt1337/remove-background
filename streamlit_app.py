@@ -5,11 +5,12 @@ ssl._create_default_https_context = ssl._create_stdlib_context
 from streamlit_option_menu import option_menu
 from pages.youtube_video import Convert_video
 from pages.youtube_audio import Convert_audio
+import pages.calculadora_imc as PagecalculaIMC
 from PIL import Image
 from rembg import remove
 from streamlit_option_menu import option_menu
 
-st.set_page_config(page_title="Home", page_icon="😁", layout="wide",initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Home", page_icon="😁", layout="wide",initial_sidebar_state="expanded")
 no_sidebar_style="""
             <style>
                 div[data-testid="stSidebarNav"] {display: none;}
@@ -27,15 +28,11 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
-with st.sidebar:
-    github =   '[GitHub](http://github.com)'
-    linkedin = '[Linkedin](http://linkedin.com)'
-    st.markdown(github, unsafe_allow_html=True)
-    st.markdown(linkedin, unsafe_allow_html=True)
-    
-selected = option_menu(None,["Home","Remove Background Image","Download Audio Yt","Download Video Yt"],
+
+with st.sidebar:    
+    selected = option_menu(None,["Home","Remove Background Image","Download Audio Yt","Download Video Yt","IMC"],
                        icons=['house','cloud-upload'],
-                       menu_icon="cast", default_index=0, orientation="horizontal")
+                       menu_icon="cast", default_index=0, orientation="vertical")
 
 def Home():
     st.title("On this page you can magically download video from youtube, download audio form youtube and remove background from an image.")
@@ -95,3 +92,12 @@ if selected  == 'Download Audio Yt':
 
 if selected  == 'Download Video Yt':
     Convert_video()
+
+if selected  == 'IMC':
+    PagecalculaIMC.IMC()
+
+with st.sidebar:
+    github =   '[GitHub](http://github.com)'
+    linkedin = '[Linkedin](http://linkedin.com)'
+    st.markdown(github, unsafe_allow_html=True)
+    st.markdown(linkedin, unsafe_allow_html=True)    
