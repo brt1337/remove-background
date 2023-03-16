@@ -90,8 +90,8 @@ if selected  == 'Home':
 if selected  == 'Remove Background Image':
     remove_background()
 
-if selected  == 'Convert Audio Youtube':
+if selected  == 'Download Audio Yt':
     Convert_audio()
 
-if selected  == 'Convert Video Youtube':
+if selected  == 'Download Video Yt':
     Convert_video()
