@@ -17,7 +17,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 @st.cache_data(show_spinner=False)
-def download_video_to_buffer(url,resolution):
+def download_video_to_buffer(url):
     buffer = BytesIO()
     youtube_video = YouTube(url)
     video = youtube_video.streams.filter(progressive="True",file_extension="mp4").order_by('resolution').desc()
@@ -28,7 +28,6 @@ def download_video_to_buffer(url,resolution):
 
 def Convert_video():
     st.title("Download video from Youtube")
-    resolutions = ['144p', '240p', '360p', '480p', '720p', '1080p']
     url = st.text_input("Insert Youtube URL:")
     if url:
         with st.spinner("Downloading video Stream from Youtube..."):
